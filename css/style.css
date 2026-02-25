@@ -6604,7 +6604,8 @@ h6.font-parisienne {
 }
 
 .post-image img {
-    width: 100%
+    width: 100%;
+    max-height: 270px;
 }
 
 .post-metaa {
