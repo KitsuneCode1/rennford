@@ -31,6 +31,47 @@
                 width: 20% !important;
             }
         }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .col-lg-4 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .icon-box.text-center, .icon-box.center {
+            padding: 0;
+            text-align: center;
+        }
+
+        .icon-box {
+            margin-bottom: 50px;
+            position: relative;
+        }
+        .center {
+            float: none !important;
+            margin: 0 auto;
+        }
+
+        .icon-box.text-center .icon, .icon-box.center .icon {
+            margin: 0 auto 22px;
+            position: relative;
+        }
+
+        .icon-box .icon {
+            height: 64px;
+            position: absolute;
+            width: 64px;
+        }
+
+        .icon-links {
+            padding: 10rem;
+        }
     </style>
 </head>
 
@@ -384,6 +425,27 @@ We provide capital and expertise to innovators in Web3 and decentralized finance
             </div>
         </section>
         <!-- end: BLOG -->
+
+
+        <section class="icon-links">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="icon-box effect medium center">
+                      <div class="icon"> <a href="#"><i class="fa fa-certificate"></i></a> </div>
+                      <h3>About Us</h3>
+                      <p>Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="icon-box effect medium center">
+                      <div class="icon"> <a href="#"><i class="far fa-envelope"></i></a> </div>
+                      <h3>Contact Us</h3>
+                      <p>Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <!-- Footer -->
