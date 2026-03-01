@@ -18,6 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
     <style>
         #client {
@@ -75,7 +77,11 @@
     </style>
 </head>
 
-<body>
+<body data-animation-in="fadeIn"
+  data-animation-out="fadeOut"
+  data-icon="16"
+  data-speed-in="1000"
+  data-speed-out="500">
 
 
     <!-- Body Inner -->
@@ -124,17 +130,7 @@
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
 
-                                    <li class="dropdown mega-menu-item"><a href="#">About Us</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="whoarewe.html">Who Are We</a></li>
-                                            <li><a href="mission.html">Our Vision/Mission</a></li>
-                                            <li><a href="approach.html">Our Approach</a></li>
-                                            <li><a href="header-menu-center.html">Center</a></li>
-                                            <li><a href="choose.html">Why Choose Us</a></li>
-                                            <li><a href="insurance.html">Insurance Solutions</a></li>
-
-
-                                        </ul>
+                                    <li class="dropdown mega-menu-item"><a href="about.html">About Us</a>
                                     </li>
                                     </li>
                                     <li class="dropdown mega-menu-item"><a href="#">Our Services</a>
@@ -450,11 +446,76 @@ We provide capital and expertise to innovators in Web3 and decentralized finance
 
         <!-- Footer -->
         <footer id="footer">
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row gap-y">
+                        <div class="col-md-6 col-xl-4">
+                            <p><a href="#"><img src="images/logo.png" alt="logo"></a></p>
+                            <p>To design is to discover relationships and to make arrangements and rearrangements among these ingredients.</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-xl-2">
+                            <!-- Footer widget area 1 -->
+                            <div class="widget">
+                                <h4>PROJECT</h4>
+                                <ul class="list">
+                                    <li><a href="#">Latest Release</a></li>
+                                    <li><a href="#">Updates</a></li>
+                                    <li><a href="#">License</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Links</a></li>
+                                </ul>
+                            </div>
+                            <!-- end: Footer widget area 1 -->
+                        </div>
+                        <div class="col-6 col-md-3 col-xl-2">
+                            <!-- Footer widget area 2 -->
+                            <div class="widget">
+                                <h4>SUPPORT</h4>
+                                <ul class="list">
+                                    <li><a href="#">Troubleshooting</a></li>
+                                    <li><a href="#">Common Questions</a></li>
+                                    <li><a href="#">Report a Bug</a></li>
+                                    <li><a href="#">Get Help</a></li>
+                                    <li><a href="#">FAQS</a></li>
+                                </ul>
+                            </div>
+                            <!-- end: Footer widget area 2 -->
+                        </div>
+                        <div class="col-6 col-md-6 col-xl-2">
+                            <!-- Footer widget area 3 -->
+                            <div class="widget">
+                                <h4>COMPANY</h4>
+                                <ul class="list">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                </ul>
+                            </div>
+                            <!-- end: Footer widget area 3 -->
+                        </div>
+                        <div class="col-6 col-md-6 col-xl-2">
+                            <p><a class="btn btn-block" href="#">Download Now</a></p>
+                            <br>
+                            <!-- Social icons -->
+                            <h5>FOLLOW US</h5>
+                            <div class="social-icons social-icons-colored social-icons-rounded float-left">
+                                <ul>
+                                    <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+                                    <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li class="social-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="social-youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- end: Social icons -->
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="copyright-content">
                 <div class="container">
-                    <div class="copyright-text text-center">&copy; 2019 POLO - Responsive Multi-Purpose HTML5 Template.
-                        All Rights Reserved.<a href="https://www.inspiro-media.com" target="_blank" rel="noopener">
-                            INSPIRO</a> </div>
+                    <div class="copyright-text text-center">© 2019 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.<a href="//www.inspiro-media.com" target="_blank" rel="noopener">INSPIRO</a> </div>
                 </div>
             </div>
         </footer>
@@ -466,7 +527,7 @@ We provide capital and expertise to innovators in Web3 and decentralized finance
     <!-- Scroll top -->
     <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
     <!--Plugins-->
-    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    
     <script src="js/jquery.js"></script>
     <script src="js/plugins.js"></script>
 
@@ -474,8 +535,11 @@ We provide capital and expertise to innovators in Web3 and decentralized finance
     <script src="js/functions.js"></script>
 
     <!--Google Maps files-->
-    <script type='text/javascript'
-        src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBOksKHb9HyydVB-mcrqKUVfA_LeB79jcQ'></script>
+  <script
+  async
+  defer
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=initMap">
+</script>
     <script type="text/javascript" src="plugins/gmap3/gmap3.min.js"></script>
     <script type="text/javascript" src="plugins/gmap3/map-styles.js"></script>
 
