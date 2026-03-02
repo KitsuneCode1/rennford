@@ -74,6 +74,18 @@
         .icon-links {
             padding: 10rem;
         }
+
+        @media (max-width: 767px) {
+            #home-icons{
+                flex-direction: column;
+            }
+            .col-lg-4{
+                max-width: 100%;
+            }
+            .icon-links {
+                padding: 5rem;
+            }
+        }
     </style>
 </head>
 
@@ -216,7 +228,7 @@
         <!-- end: Header -->
 
         <!-- SECTION IMAGE FULLSCREEN -->
-        <section class="fullscreen" data-bg-parallax="images/parallax/18.jpg">
+        <section class="fullscreen" data-bg-parallax="">
             <div class="bg-overlay"></div>
             <div class="container">
                 <div class="container-fullscreen">
@@ -239,7 +251,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6"
-                        style="height:609px;background:url(homepages/corporate/images/2.jpg) 50% 50% / cover no-repeat;">
+                        style="height:609px;background:url(homepages/corporate/images/.jpg) 50% 50% / cover no-repeat;">
                     </div>
                     <div class="col-lg-6">
                         <div class="heading-text heading-section">
@@ -424,7 +436,7 @@ We provide capital and expertise to innovators in Web3 and decentralized finance
 
 
         <section class="icon-links">
-            <div class="row">
+            <div class="row" id="home-icons">
                 <div class="col-lg-4">
                     <div class="icon-box effect medium center">
                       <div class="icon"> <a href="#"><i class="fa fa-certificate"></i></a> </div>
