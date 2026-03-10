@@ -15,22 +15,62 @@
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <style>
+        .row{
+            padding-bottom: 3rem;
+            width: 100%;
+        }
+        .col-lg-6 {
+            width: 100%;
+        }
         .image-container{
             width: 100%;
-          height: 250px; /* or whatever fixed height you want */
+            max-width: 530px;
+            height: 450px;
+            margin: 0 .8rem;
+            border-radius: 7px;
           overflow: hidden; /* important to keep image inside the container */
-          border-radius: 8px; /* optional rounded corners */
+          position: relative;
         }
 
         .image-container img{
             width: 100%;
-          height: 100%;
+            height: 100%;
           object-fit: cover; /* ensures the image covers container nicely */
+          position: absolute;
+          top: 0;
+          left: 0;   
           transition: transform 0.4s ease-in-out;
+          transform-origin: center; 
         }
 
-        .image-container img:hover {
+        .image-container:hover img {
           transform: scale(1.05);
+        }
+
+        #img-first {
+            margin-left: 1rem;
+            margin-right: 1.5rem;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1200px;
+            }
+        }
+
+        @media (max-width: 769px) {
+            .row {
+                flex-direction: column;
+            }
+            .image-container {
+                margin: 1rem;
+                width: 100%;
+            }
+
+            #img-first {
+                margin: 1rem;
+                order: 2;
+            }
         }
     </style>
 </head>
@@ -147,7 +187,7 @@
                 <div class="container">
                     <div class="slide-captions text-center text-light">
                         <!-- Captions -->
-                        <h1>Real Estate</h1>
+                        <h1>REAL ESTATE</h1>
                         <!-- end: Captions -->
                     </div>
                 </div>
@@ -191,11 +231,11 @@
                     <br><br>
 
                     <div class="row">
-                        <div class="col-lg-6 image-container">
+                        <div class="col-lg-6 image-container" id="img-first">
                             <img src="images/skyscraper.jpg">
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" >
                             <p class="lead">
                                 At the heart of our success lies a leadership team with unparalleled depth.
                                 Boasting competencies in mergers, capital management, investment analysis,
@@ -219,30 +259,32 @@
 
                     <div class="row">
                         <div class="col-lg-6">
-                                <p class="lead">
-                                    Our team concentrates on small to midsize properties, a niche where our
-                                    operational expertise can generate outsized impact. In this often-overlooked
-                                    segment of the market, we deploy deep industry knowledge to accelerate value
-                                    creation, enhance performance, and unlock revenue potential that others fail to
-                                    see. Every property receives the same hands-on attention and strategic focus
-                                    that distinguish our private equity investments.
-                                </p>
+                            <p class="lead">
+                                Our team concentrates on small to midsize properties, a niche where our
+                                operational expertise can generate outsized impact. In this often-overlooked
+                                segment of the market, we deploy deep industry knowledge to accelerate value
+                                creation, enhance performance, and unlock revenue potential that others fail to
+                                see. Every property receives the same hands-on attention and strategic focus
+                                that distinguish our private equity investments.
+                            </p>
 
-                                <p class="lead">
-                                    To further strengthen our insights and sourcing capabilities, Rennford Real
-                                    Estate draws extensively upon the firm's deep expertise across asset classes
-                                    and our integrated worldwide platform. Whether leveraging credit team
-                                    perspectives on financing markets, infrastructure insights on energy and
-                                    logistics, or private equity operational playbooks, we bring the full weight of
-                                    Rennford's collective intelligence to every investment.
-                                </p>
-                            </div>
+                            <p class="lead">
+                                To further strengthen our insights and sourcing capabilities, Rennford Real
+                                Estate draws extensively upon the firm's deep expertise across asset classes
+                                and our integrated worldwide platform. Whether leveraging credit team
+                                perspectives on financing markets, infrastructure insights on energy and
+                                logistics, or private equity operational playbooks, we bring the full weight of
+                                Rennford's collective intelligence to every investment.
+                            </p>
+                        </div>
 
+                        <div class="col-lg-6 image-container">
+                            <img src="images/skyscraper.jpg">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <!-- <section class="box-fancy section-fullwidth text-light p-b-0">
             <div class="row">
