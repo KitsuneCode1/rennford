@@ -14,6 +14,82 @@
     <!-- Stylesheets & Fonts -->
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .row{
+            padding-bottom: 3rem;
+            width: 100%;
+        }
+        .col-lg-6 {
+            width: 100%;
+        }
+        .image-container{
+            width: 100%;
+            max-width: 530px;
+            margin: 0 .8rem;
+            border-radius: 7px;
+            margin-bottom: 3rem;
+          overflow: hidden; /* important to keep image inside the container */
+          position: relative;
+        }
+
+        .one-row {
+            height: 250px;
+        }
+
+        .two-row {
+            height: 450px;
+        }
+
+        .three-row {
+            height: 600px;
+        }
+
+        .image-container img{
+            width: 100%;
+            height: 100%;
+          object-fit: cover; /* ensures the image covers container nicely */
+          position: absolute;
+          top: 0;
+          left: 0;   
+          transition: transform 0.4s ease-in-out;
+          transform-origin: center; 
+        }
+
+        .image-container:hover img {
+          transform: scale(1.05);
+        }
+
+        #img-first {
+            margin-left: 1rem;
+            margin-right: 1.5rem;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1200px;
+            }
+        }
+
+        @media (max-width: 769px) {
+            .row {
+                flex-direction: column;
+            }
+            .image-container {
+                margin: 1rem;
+                width: 100%;
+            }
+
+            #img-first {
+                margin: 1rem;
+                order: 2;
+            }
+
+            .image-container{
+                height: 400px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -128,8 +204,7 @@
                 <div class="container">
                     <div class="slide-captions text-center text-light">
                         <!-- Captions -->
-                        <span class="strong">Who we are</span>
-                        <h1>About our company</h1>
+                        <h1>PRIVATE EQUITY</h1>
                         <!-- end: Captions -->
                     </div>
                 </div>
@@ -144,15 +219,37 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="heading-text heading-section">
-                            <h2>THE COMPANY</h2>
+                            <h2>STRATEGY OVERVIEW</h2>
 
                         </div>
                     </div>
                     <div class="col-lg-9">
                         <div class="row">
-                            <div class="col-lg-6">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, <br> <br> facilisis ut venenatis eu, sodales vel dolor. The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. </div>
+                            <div class="col-lg-6">
+                                At Rennford Private Equity, our singular goal is to become the preferred partner
+                                for companies seeking to unlock their full potential and achieve sustainable
+                                growth. We believe that true partnership is built on trust, alignment, and a
+                                shared commitment to excellence, principles that guide every interaction with
+                                the businesses we support.
+                                <br> <br> 
+                                Our track record reflects the diversity of our approach. We have partnered
+                                successfully with numerous startups poised for scale, founder-led enterprises
+                                seeking strategic resources, companies navigating turnaround situations, and
+                                carve-outs emerging from larger corporate structures. In every instance, we
+                                work alongside management to identify opportunities, overcome challenges,
+                                and accelerate progress.
+                            </div>
 
-                            <div class="col-lg-6">Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. <br> <br>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volut.</div>
+                            <div class="col-lg-6">
+                                We help businesses enhance their market standing by pursuing disciplined
+                                growth strategies: expanding into new products and geographies, driving
+                                operational productivity, and strengthening organizational foundations. This
+                                comprehensive approach ensures that the companies we back are not only
+                                positioned for near-term success but built for enduring market leadership. We
+                                believe that growth-oriented partnerships produce stronger businesses
+                                enterprises that attract top talent, embrace social responsibility, and generate
+                                substantial long-term returns for investors, employees, and communities alike.
+                            </div>
 
                         </div>
                     </div>
@@ -161,8 +258,155 @@
             </div>
         </section>
 
+        <section class="background-grey">
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>
+                        BUILDING AND SCALING BUSINESSES GLOBALLY
+                    </h2>
+                </div>
 
-        <section class="box-fancy section-fullwidth text-light p-b-0">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                Rennford Credit allocates capital across a diverse range of strategies, each with
+                                distinct risk/return objectives and tailored vehicle configurations. To meet the full
+                                spectrum of investor needs, we offer solutions spanning commingled funds to
+                                separately managed accounts, across a variety of liquidity profiles, asset
+                                exposures, and geographic concentrations. This flexibility ensures that our
+                                partners can access Rennford's credit expertise in the structure that best aligns
+                                with their unique objectives.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 image-container one-row">
+                            <img src="images/skyscraper.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>
+                        DIFFERENTIATED INVESTMENT STRATEGY
+                    </h2>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                Rennford Private Equity operates as a single, internationally integrated firm,
+                                united by a shared purpose and a common culture. This structure reflects our
+                                belief that the most compelling investment opportunities cannot be confined by
+                                geography they demand a global perspective and a coordinated response.
+                            </p>
+
+                            <p class="lead">
+                                Our ability to leverage a fully integrated worldwide team is a critical advantage in
+                                today's environment, where businesses must navigate interconnected markets
+                                and capitalize on cross-border trends. Whether identifying emerging themes,
+                                executing complex transactions, or driving operational improvements across
+                                continents, our integrated model ensures we deliver consistent excellence. At
+                                Rennford, we are not just present in global markets, we are woven into their
+                                fabric.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 image-container two-row">
+                            <img src="images/skyscraper.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="background-grey">
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>
+                        ESTABLISHING AND EXPANDING GREAT BUSINESSES
+                    </h2>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                The value-added investment strategy was invented by Rennford Private Equity,
+                                born from a simple but powerful insight: that private equity firms must do more
+                                than allocate capital, they must actively build. We were among the first to embed
+                                operational expertise at the core of our investment model.
+                            </p>
+
+                            <p class="lead">
+                                To bring this vision to life, we created a dedicated global portfolio group, one of
+                                the first of its kind, staffed by professionals with deep experience in operations
+                                and strategy. This group collaborates closely with our investment professionals,
+                                the majority of whom bring strategic consulting backgrounds, to work alongside
+                                management teams in driving transformative change.
+                            </p>
+
+                            <p class="lead">
+                                Together, they provide the tools, insights, and execution support needed to
+                                strengthen our capital market companies and unlock their full potential. At
+                                Rennford, we believe that the best investments are built, not bought, and our
+                                value-added strategy ensures we have the expertise to build them.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 image-container three-row">
+                            <img src="images/skyscraper.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>
+                        INDUSTRY EXPERTISE
+                    </h2>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                Rennford Private Equity has completed more than 3,000 primary and add-on
+                                investments across key industry sectors, building an unparalleled foundation of
+                                experience and knowledge that directly benefits every company in our portfolio.
+                                This extensive track record means that when we partner with a business, we
+                                bring not only capital but also insights drawn from thousands of transactions and
+                                decades of market engagement.
+                            </p>
+
+                            <p class="lead">
+                                Yet our advantage extends beyond our private equity team alone. We draw
+                                upon the extensive expertise of the broader Rennford platform, spanning
+                                multiple asset classes and industry segments to more deeply analyze, value,
+                                and support our investments. In the face of complex industry dynamics, this
+                                integrated approach allows us to see the full picture, anticipate challenges, and
+                                identify opportunities that might otherwise remain hidden.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 image-container two-row">
+                            <img src="images/skyscraper.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section class="box-fancy section-fullwidth text-light p-b-0">
             <div class="row">
                 <div style="background-color:#917d5d" class="col-lg-4">
                     <h1 class="text-lg text-uppercase">01.</h1>
@@ -182,178 +426,7 @@
                     <span>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. </span>
                 </div>
             </div>
-        </section>
-
-        <section class="background-grey">
-            <div class="container">
-                <div class="heading-text heading-section text-center">
-                    <h2>OUR TEAM</h2>
-                    <span class="lead">Create amaThe most happiest time of the day!.</span>
-                </div>
-                <div class="row team-members team-members-shadow m-b-40">
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/6.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Alea Smith</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#d8fb" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/7.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Ariol Doe</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#d7f4" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/8.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Emma Ross</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#3417" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/9.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Victor Loda</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#f8db" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="heading-text text-center">
-                    <h2>What people are saying!</h2>
-                    <p class="lead text-center">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.</p>
-                </div>
-                <!-- Testimonials -->
-                <div class="carousel arrows-visibile testimonial testimonial-single testimonial-left" data-items="1">
-
-                    <!-- Testimonials item -->
-                    <div class="testimonial-item">
-                        <img src="images/team/9.jpg" alt="">
-                        <p>Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!</p>
-                        <span>Alan Monre</span>
-                        <span>CEO, Square Software</span>
-                    </div>
-                    <!-- end: Testimonials item-->
-
-                    <!-- Testimonials item -->
-                    <div class="testimonial-item">
-                        <img src="images/team/9.jpg" alt="">
-                        <p>Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!</p>
-                        <span>Alan Monre</span>
-                        <span>CEO, Square Software</span>
-                    </div>
-                    <!-- end: Testimonials item-->
-
-                    <!-- Testimonials item -->
-                    <div class="testimonial-item">
-                        <img src="images/team/9.jpg" alt="">
-                        <p>The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
-                        <span>Alan Monre</span>
-                        <span>CEO, Square Software</span>
-                    </div>
-                    <!-- end: Testimonials item-->
-
-                </div>
-                <!-- end: Testimonials -->
-            </div>
-        </section>
+        </section> -->
 
         <!-- Footer -->
         <footer id="footer">

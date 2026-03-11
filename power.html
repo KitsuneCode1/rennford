@@ -14,6 +14,81 @@
     <!-- Stylesheets & Fonts -->
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .row{
+            padding-bottom: 3rem;
+            width: 100%;
+        }
+        .col-lg-6 {
+            width: 100%;
+        }
+        .image-container{
+            width: 100%;
+            max-width: 530px;
+            margin: 0 .8rem;
+            border-radius: 7px;
+            margin-bottom: 3rem;
+          overflow: hidden; /* important to keep image inside the container */
+          position: relative;
+        }
+
+        .one-row {
+            height: 250px;
+        }
+
+        .two-row {
+            height: 450px;
+        }
+
+        .three-row {
+            height: 600px;
+        }
+
+        .image-container img{
+            width: 100%;
+            height: 100%;
+          object-fit: cover; /* ensures the image covers container nicely */
+          position: absolute;
+          top: 0;
+          left: 0;   
+          transition: transform 0.4s ease-in-out;
+          transform-origin: center; 
+        }
+
+        .image-container:hover img {
+          transform: scale(1.05);
+        }
+
+        #img-first {
+            margin-left: 1rem;
+            margin-right: 1.5rem;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1200px;
+            }
+        }
+
+        @media (max-width: 769px) {
+            .row {
+                flex-direction: column;
+            }
+            .image-container {
+                margin: 1rem;
+                width: 100%;
+            }
+
+            #img-first {
+                margin: 1rem;
+                order: 2;
+            }
+
+            .image-container{
+                height: 400px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -140,28 +215,140 @@
 
         <section>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="heading-text heading-section">
-                            <h2>THE COMPANY</h2>
+                <div class="heading-text heading-section text-center">
+                    <h2>
+                        INVESTING IN RENEWABLES TO COMBAT CLIMATE CHANGE
+                    </h2>
+                </div>
 
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                At Rennford, we are actively shifting toward the generation of green power. We
+                                recognize that the world needs energy and that how we produce it matters
+                                profoundly. That is why we are investing deliberately in renewable energy
+                                sources such as solar and wind, generating power that is not only reliable but
+                                healthy for the climate. Our commitment to renewable energy reflects our belief
+                                that responsible investment can deliver both strong returns and a more
+                                sustainable future.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 image-container one-row">
+                            <img src="images/skyscraper.jpg">
                         </div>
                     </div>
-                    <div class="col-lg-9">
-                        <div class="row">
-                            <div class="col-lg-6">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, <br> <br> facilisis ut venenatis eu, sodales vel dolor. The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. </div>
+                </div>
+            </div>
+        </section>
 
-                            <div class="col-lg-6">Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. <br> <br>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volut.</div>
+         <section class="background-grey">
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>
+                        DRIVING RENEWABLE ADOPTION ACROSS OUR PORTFOLIO
+                    </h2>
+                </div>
 
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                At Rennford, we face a reality shared by investors across the global economy:
+                                approximately 70% of the businesses we manage currently depend on energy
+                                systems that emit harmful gases into the atmosphere. We do not shy away from
+                                this fact, we confront it directly, with a clear-eyed focus on solutions.
+                            </p>
+
+                            <p class="lead">
+                                We are working deliberately to shift our portfolio's reliance on harmful energy
+                                solutions toward climate-friendly alternatives. This means investing in energy
+                                efficiency upgrades, supporting the adoption of renewable power, exploring
+                                emerging clean technologies, and partnering with management teams to
+                                implement practical decarbonization strategies tailored to each business's
+                                unique circumstances.
+                            </p>
+
+                            <p class="lead">
+                                Throughout this process, we remain steadfast in our commitment to boosting
+                                production and maximizing profits for our investors. We believe that
+                                sustainability and profitability are not opposing forces but complementary
+                                objectives. By reducing energy costs, improving efficiency, and future-proofing
+                                operations against regulatory and market shifts, we create businesses that are
+                                not only cleaner but stronger, more resilient, and better positioned for long-term
+                                success.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 image-container three-row">
+                            <img src="images/skyscraper.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>
+                        OUR NORTH STAR
+                    </h2>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                By 2040, Rennford aims to decarbonize approximately 95% of the businesses
+                                within our portfolio, a fundamental transition toward greener, more sustainable
+                                energy that reflects both our environmental responsibility and our long-term
+                                strategic vision.
+                            </p>
+
+                            <p class="lead">
+                                This is not a theoretical exercise. We have already established a dedicated
+                                team charged with drafting and executing our decarbonization strategy. These
+                                experts work around the clock, engaging with portfolio companies, evaluating
+                                renewable energy technologies, and designing practical pathways that reduce
+                                emissions while preserving and often enhancing operational performance.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 image-container two-row">
+                            <img src="images/skyscraper.jpg">
                         </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-lg-6 image-container two-row" id="img-first">
+                            <img src="images/skyscraper.jpg">
+                        </div>
+
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                At Rennford, we believe that commitments must be matched by action. That is
+                                why we are actively migrating our businesses to renewable energy solutions,
+                                investing in the infrastructure and partnerships required to make clean power
+                                accessible and reliable for every company we manage.
+                            </p>
+
+                            <p class="lead">
+                                We are determined to reduce the environmental impact of harmful emissions not
+                                only because it is right for the planet, but because it is essential for the
+                                communities we serve. By protecting our environment, we protect the places
+                                where our employees, partners, and neighbors live and work. This is the
+                                purpose that drives our 2040 agenda forward, day after day.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
 
-        <section class="box-fancy section-fullwidth text-light p-b-0">
+        <!-- <section class="box-fancy section-fullwidth text-light p-b-0">
             <div class="row">
                 <div style="background-color:#917d5d" class="col-lg-4">
                     <h1 class="text-lg text-uppercase">01.</h1>
@@ -181,178 +368,7 @@
                     <span>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. </span>
                 </div>
             </div>
-        </section>
-
-        <section class="background-grey">
-            <div class="container">
-                <div class="heading-text heading-section text-center">
-                    <h2>OUR TEAM</h2>
-                    <span class="lead">Create amaThe most happiest time of the day!.</span>
-                </div>
-                <div class="row team-members team-members-shadow m-b-40">
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/6.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Alea Smith</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#d8fb" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/7.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Ariol Doe</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#d7f4" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/8.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Emma Ross</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#3417" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/9.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Victor Loda</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#f8db" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="heading-text text-center">
-                    <h2>What people are saying!</h2>
-                    <p class="lead text-center">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.</p>
-                </div>
-                <!-- Testimonials -->
-                <div class="carousel arrows-visibile testimonial testimonial-single testimonial-left" data-items="1">
-
-                    <!-- Testimonials item -->
-                    <div class="testimonial-item">
-                        <img src="images/team/9.jpg" alt="">
-                        <p>Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!</p>
-                        <span>Alan Monre</span>
-                        <span>CEO, Square Software</span>
-                    </div>
-                    <!-- end: Testimonials item-->
-
-                    <!-- Testimonials item -->
-                    <div class="testimonial-item">
-                        <img src="images/team/9.jpg" alt="">
-                        <p>Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!</p>
-                        <span>Alan Monre</span>
-                        <span>CEO, Square Software</span>
-                    </div>
-                    <!-- end: Testimonials item-->
-
-                    <!-- Testimonials item -->
-                    <div class="testimonial-item">
-                        <img src="images/team/9.jpg" alt="">
-                        <p>The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
-                        <span>Alan Monre</span>
-                        <span>CEO, Square Software</span>
-                    </div>
-                    <!-- end: Testimonials item-->
-
-                </div>
-                <!-- end: Testimonials -->
-            </div>
-        </section>
+        </section> -->
 
         <!-- Footer -->
         <footer id="footer">

@@ -14,6 +14,81 @@
     <!-- Stylesheets & Fonts -->
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .row{
+            padding-bottom: 3rem;
+            width: 100%;
+        }
+        .col-lg-6 {
+            width: 100%;
+        }
+        .image-container{
+            width: 100%;
+            max-width: 530px;
+            margin: 0 .8rem;
+            margin-bottom: 3rem;
+            border-radius: 7px;
+          overflow: hidden; /* important to keep image inside the container */
+          position: relative;
+        }
+
+        .one-row {
+            height: 250px;
+        }
+
+        .two-row {
+            height: 450px;
+        }
+
+        .three-row {
+            height: 600px;
+        }
+
+        .image-container img{
+            width: 100%;
+            height: 100%;
+          object-fit: cover; /* ensures the image covers container nicely */
+          position: absolute;
+          top: 0;
+          left: 0;   
+          transition: transform 0.4s ease-in-out;
+          transform-origin: center; 
+        }
+
+        .image-container:hover img {
+          transform: scale(1.05);
+        }
+
+        #img-first {
+            margin-left: 1rem;
+            margin-right: 1.5rem;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1200px;
+            }
+        }
+
+        @media (max-width: 769px) {
+            .row {
+                flex-direction: column;
+            }
+            .image-container {
+                margin: 1rem;
+                width: 100%;
+            }
+
+            #img-first {
+                margin: 1rem;
+                order: 2;
+            }
+
+            .image-container{
+                height: 400px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -128,8 +203,7 @@
                 <div class="container">
                     <div class="slide-captions text-center text-light">
                         <!-- Captions -->
-                        <span class="strong">Who we are</span>
-                        <h1>About our company</h1>
+                        <h1>Digital Assets</h1>
                         <!-- end: Captions -->
                     </div>
                 </div>
@@ -144,15 +218,34 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="heading-text heading-section">
-                            <h2>THE COMPANY</h2>
+                            <h2>OUR STRATEGIC FORESIGHT</h2>
 
                         </div>
                     </div>
                     <div class="col-lg-9">
                         <div class="row">
-                            <div class="col-lg-6">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, <br> <br> facilisis ut venenatis eu, sodales vel dolor. The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. </div>
+                            <div class="col-lg-6">
+                                At Rennford, we believe that the future of finance, commerce, and human
+                                interaction will be shaped by digital assets and the technologies that power
+                                them. That is why we are actively exploring the transformative potential of
+                                cryptocurrencies, NFTs, DeFi, AI, and the metaverse, not as speculative
+                                opportunities, but as strategic imperatives.
+                                <br> <br> 
+                                This work is guided by a simple conviction: that the businesses best positioned
+                                for the future are those preparing for it today. By building expertise, forging
+                                partnerships, and making disciplined investments in digital assets and related
+                                technologies, we are ensuring that Rennford and the companies we support, will
+                                thrive in the economy of tomorrow.
+                            </div>
 
-                            <div class="col-lg-6">Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. <br> <br>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volut.</div>
+                            <div class="col-lg-6">
+                                Our goal is to expedite the development of solutions and capabilities that
+                                leverage these technologies for enduring value. We invest in and partner with
+                                businesses that are building the infrastructure, platforms, and applications that
+                                will define the digital asset ecosystem. From decentralized protocols to AIenabled services, from digital ownership mechanisms to immersive virtual
+                                environments, we are positioning Rennford to participate in the next great wave
+                                of innovation.
+                            </div>
 
                         </div>
                     </div>
@@ -161,8 +254,87 @@
             </div>
         </section>
 
+        <section class="background-grey">
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>
+                        THE FUTURE OF FINANCE
+                    </h2>
+                </div>
 
-        <section class="box-fancy section-fullwidth text-light p-b-0">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                Rennford actively explores the transformative potential of digital assets,
+                                recognizing that the future of finance will be defined by the technologies and
+                                capabilities emerging in this dynamic ecosystem. We are committed to
+                                expediting the development of solutions that will shape how value is created,
+                                exchanged, and preserved in the decades ahead.
+                            </p>
+
+                            <p class="lead">
+                                Our conviction is simple but profound: cryptocurrencies, decentralized finance
+                                (DeFi), blockchain infrastructure, and related digital asset innovations are not
+                                peripheral trends but fundamental forces reshaping the financial landscape.
+                                From reimagining payment systems to democratizing access to capital, from
+                                enabling new forms of ownership to creating transparent, efficient markets,
+                                digital assets are rewriting the rules of finance.
+                            </p>
+
+                            <p class="lead">
+                                At Rennford, we are not passive observers of this transformation. We actively
+                                invest in and partner with visionary entrepreneurs and established institutions
+                                building the infrastructure and applications that will define the financial future. By
+                                combining technological fluency with disciplined investment expertise, we
+                                position ourselves and our investors at the forefront of this historic shift.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 image-container three-row">
+                            <img src="images/skyscraper.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="background-grey">
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>
+                        TECH OPPORTUNITIES
+                    </h2>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                With over $4 billion invested in digital assets across multiple classes, Rennford
+                                combines significant scale with deep expertise. We leverage digital and
+                                operational capabilities from across the firm while collaborating closely with
+                                leading technology companies to help our portfolio companies unlock their full
+                                potential and achieve their objectives.
+                            </p>
+
+                            <p class="lead">
+                                At the same time, we are developing the
+                                industry's first multi-asset platform, a pioneering solution that will seamlessly
+                                integrate digital asset custody, execution, and administration with traditional
+                                assets, enabling unified portfolio management for investors.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 image-container two-row">
+                            <img src="images/skyscraper.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="box-fancy section-fullwidth text-light p-b-0">
             <div class="row">
                 <div style="background-color:#917d5d" class="col-lg-4">
                     <h1 class="text-lg text-uppercase">01.</h1>
@@ -182,178 +354,7 @@
                     <span>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. </span>
                 </div>
             </div>
-        </section>
-
-        <section class="background-grey">
-            <div class="container">
-                <div class="heading-text heading-section text-center">
-                    <h2>OUR TEAM</h2>
-                    <span class="lead">Create amaThe most happiest time of the day!.</span>
-                </div>
-                <div class="row team-members team-members-shadow m-b-40">
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/6.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Alea Smith</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#d8fb" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/7.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Ariol Doe</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#d7f4" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/8.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Emma Ross</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#3417" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/9.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Victor Loda</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#f8db" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="heading-text text-center">
-                    <h2>What people are saying!</h2>
-                    <p class="lead text-center">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.</p>
-                </div>
-                <!-- Testimonials -->
-                <div class="carousel arrows-visibile testimonial testimonial-single testimonial-left" data-items="1">
-
-                    <!-- Testimonials item -->
-                    <div class="testimonial-item">
-                        <img src="images/team/9.jpg" alt="">
-                        <p>Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!</p>
-                        <span>Alan Monre</span>
-                        <span>CEO, Square Software</span>
-                    </div>
-                    <!-- end: Testimonials item-->
-
-                    <!-- Testimonials item -->
-                    <div class="testimonial-item">
-                        <img src="images/team/9.jpg" alt="">
-                        <p>Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!</p>
-                        <span>Alan Monre</span>
-                        <span>CEO, Square Software</span>
-                    </div>
-                    <!-- end: Testimonials item-->
-
-                    <!-- Testimonials item -->
-                    <div class="testimonial-item">
-                        <img src="images/team/9.jpg" alt="">
-                        <p>The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
-                        <span>Alan Monre</span>
-                        <span>CEO, Square Software</span>
-                    </div>
-                    <!-- end: Testimonials item-->
-
-                </div>
-                <!-- end: Testimonials -->
-            </div>
-        </section>
+        </section> -->
 
         <!-- Footer -->
         <footer id="footer">

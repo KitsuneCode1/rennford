@@ -14,6 +14,81 @@
     <!-- Stylesheets & Fonts -->
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .row{
+            padding-bottom: 3rem;
+            width: 100%;
+        }
+        .col-lg-6 {
+            width: 100%;
+        }
+        .image-container{
+            width: 100%;
+            max-width: 530px;
+            margin: 0 .8rem;
+            margin-bottom: 3rem;
+            border-radius: 7px;
+          overflow: hidden; /* important to keep image inside the container */
+          position: relative;
+        }
+
+        .one-row {
+            height: 250px;
+        }
+
+        .two-row {
+            height: 450px;
+        }
+
+        .three-row {
+            height: 600px;
+        }
+
+        .image-container img{
+            width: 100%;
+            height: 100%;
+          object-fit: cover; /* ensures the image covers container nicely */
+          position: absolute;
+          top: 0;
+          left: 0;   
+          transition: transform 0.4s ease-in-out;
+          transform-origin: center; 
+        }
+
+        .image-container:hover img {
+          transform: scale(1.05);
+        }
+
+        #img-first {
+            margin-left: 1rem;
+            margin-right: 1.5rem;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1200px;
+            }
+        }
+
+        @media (max-width: 769px) {
+            .row {
+                flex-direction: column;
+            }
+            .image-container {
+                margin: 1rem;
+                width: 100%;
+            }
+
+            #img-first {
+                margin: 1rem;
+                order: 2;
+            }
+
+            .image-container{
+                height: 400px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -128,8 +203,7 @@
                 <div class="container">
                     <div class="slide-captions text-center text-light">
                         <!-- Captions -->
-                        <span class="strong">Who we are</span>
-                        <h1>About our company</h1>
+                            <h1>GLOBAL CREDIT</h1>
                         <!-- end: Captions -->
                     </div>
                 </div>
@@ -144,15 +218,35 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="heading-text heading-section">
-                            <h2>THE COMPANY</h2>
+                            <h2>OVERVIEW</h2>
 
                         </div>
                     </div>
                     <div class="col-lg-9">
                         <div class="row">
-                            <div class="col-lg-6">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, <br> <br> facilisis ut venenatis eu, sodales vel dolor. The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. </div>
+                            <div class="col-lg-6">
+                                With $137 billion in assets under management, Rennford Credit & Special
+                                Solutions stands as a formidable force in global credit investing. We deploy
+                                capital across the full credit spectrum and through a diverse array of creditrelated strategies, providing our partners with access to opportunities that span
+                                geographies, asset classes, and risk profiles.
+                                <br> <br> 
+                                Our investment mandate is intentionally broad, encompassing leveraged loans,
+                                high yield bonds, structured products, direct lending, customized capital
+                                solutions, structured equity, hard assets, and distressed securities. This
+                                comprehensive approach allows us to navigate shifting market conditions with
+                                agility, pivoting toward the most compelling risk-adjusted opportunities wherever
+                                they emerge.
+                            </div>
 
-                            <div class="col-lg-6">Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. <br> <br>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volut.</div>
+                            <div class="col-lg-6">
+                                Behind this scale and scope stands a team of 320 dedicated investment
+                                professionals, each contributing deep expertise and relentless curiosity.
+                                Leveraging Rennford's strong operational and technical capabilities, our team
+                                identifies and executes on attractive credit opportunities across North America,
+                                Europe, and Asia Pacific. In a complex and interconnected world, our size,
+                                experience, and global footprint enable us to deliver consistent value for our
+                                investors.
+                            </div>
 
                         </div>
                     </div>
@@ -161,8 +255,189 @@
             </div>
         </section>
 
+        <section class="background-grey">
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>
+                        INVESTORS
+                    </h2>
+                </div>
 
-        <section class="box-fancy section-fullwidth text-light p-b-0">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                Rennford partners with some of the most cutting-edge organizations across the
+                                global investment landscape, sovereign wealth funds, family offices,
+                                endowments, foundations, and pension funds. These sophisticated investors
+                                entrust us with their capital because they recognize our unwavering commitment
+                                to excellence, transparency, and long-term value creation.
+                            </p>
+
+                            <p class="lead">
+                                For almost three decades, we have cultivated deep and lasting relationships
+                                with our investors, grounded in a shared belief that partnership requires more
+                                than transactions. It requires openness, alignment, and relentless dedication to
+                                best-in-class service. We take pride in the fact that many of our investors have
+                                stood with us for decades, a testament to the trust we have earned and the
+                                results we have delivered.
+                            </p>
+
+                            <p class="lead">
+                                Every day, we strive to honor that trust by providing clear communication,
+                                rigorous analysis, and unwavering focus on our partners' objectives. At
+                                Rennford, our investors are not just clients, they are collaborators in building
+                                enduring value.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 image-container three-row">
+                            <img src="images/skyscraper.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>
+                        OUR INVESTMENT PHILOSOPHY
+                    </h2>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                At the core of Rennford's investment philosophy lies a fundamental tenet: to
+                                deliver excellent risk-adjusted returns through meticulous, multi-layered due
+                                diligence. We believe that true value is uncovered not through speculation, but
+                                through disciplined analysis at the industry, company, and individual security
+                                levels.
+                            </p>
+
+                            <p class="lead">
+                                Our approach is rooted in fundamental, ground-up security selection. We do not
+                                chase market narratives or rely on short-term momentum. Instead, we scrutinize
+                                the underlying drivers of each investment, evaluating competitive positioning,
+                                financial health, management quality, and valuation with exacting precision. This
+                                rigorous process ensures that every decision is grounded in substance rather
+                                than sentiment.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 image-container two-row">
+                            <img src="images/skyscraper.jpg">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 image-container one-row">
+                            <img src="images/skyscraper.jpg">
+                        </div>
+
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                Leveraging the full breadth and depth of our investing team, we seek to
+                                maximize expected return, the return we can reasonably anticipate based on
+                                fundamentals, rather than chasing the illusion of potential return. This distinction
+                                is critical to our discipline. By focusing on what we can know and analyze, rather
+                                than what we might hope or speculate, we build portfolios designed to perform
+                                consistently across market cycles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="background-grey">
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>
+                        A NEXT GENERATION STRATEGY
+                    </h2>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                The networked nature of Rennford Credit's teams provides a distinct structural
+                                advantage in today's complex and interconnected markets. Unconstrained by
+                                geography, sector, or position in the capital structure, our professionals
+                                collaborate seamlessly to identify and evaluate investment opportunities across
+                                the full spectrum of credit.
+                            </p>
+
+                            <p class="lead">
+                                This integrated model broadens the scope of our pipeline significantly. Rather
+                                than operating within rigid silos, our teams draw upon collective intelligence to
+                                surface opportunities that might otherwise remain hidden, whether in leveraged
+                                loans across North America, distressed securities in Europe, or structured
+                                products in Asia Pacific.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 image-container two-row">
+                            <img src="images/skyscraper.jpg">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 image-container one-row">
+                            <img src="images/skyscraper.jpg">
+                        </div>
+
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                Critically, our investment professionals are organized into specialized teams
+                                based on industry type or product type, enabling us to field the most effective
+                                team for each opportunity. When a potential investment arises, we deploy not a
+                                generic generalist, but a tailored group of specialists with deep relevant
+                                expertise. This ensures that every offer is examined with precision, insight, and
+                                the full weight of Rennford's capabilities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>
+                        DIVERSIFIED STRATEGIES ACROSS CREDIT SECTORS
+                    </h2>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                Rennford Credit allocates capital across a diverse range of strategies, each with
+                                distinct risk/return objectives and tailored vehicle configurations. To meet the full
+                                spectrum of investor needs, we offer solutions spanning commingled funds to
+                                separately managed accounts, across a variety of liquidity profiles, asset
+                                exposures, and geographic concentrations. This flexibility ensures that our
+                                partners can access Rennford's credit expertise in the structure that best aligns
+                                with their unique objectives.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 image-container one-row">
+                            <img src="images/skyscraper.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section class="box-fancy section-fullwidth text-light p-b-0">
             <div class="row">
                 <div style="background-color:#917d5d" class="col-lg-4">
                     <h1 class="text-lg text-uppercase">01.</h1>
@@ -182,178 +457,48 @@
                     <span>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. </span>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="background-grey">
+        <section id="page-title">
             <div class="container">
-                <div class="heading-text heading-section text-center">
-                    <h2>OUR TEAM</h2>
-                    <span class="lead">Create amaThe most happiest time of the day!.</span>
-                </div>
-                <div class="row team-members team-members-shadow m-b-40">
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/6.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Alea Smith</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#d8fb" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/7.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Ariol Doe</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#d7f4" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/8.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Emma Ross</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#3417" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/team/9.jpg">
-                            </div>
-                            <div class="team-desc">
-                                <h3>Victor Loda</h3>
-                                <span>Software Developer</span>
-                                <p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                                        <i class="fab fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="../cdn-cgi/l/email-protection.html#f8db" data-width="80">
-                                        <i class="icon-mail"></i>
-                                        <span>Mail</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="page-title">
+                    <h1>Rennford Credit By The Numbers </h1>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container">
-                <div class="heading-text text-center">
-                    <h2>What people are saying!</h2>
-                    <p class="lead text-center">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.</p>
+
+        <div class="container" style="margin-bottom: 10rem;">
+            <div class="row col-no-margin equalize" data-equalize-item=".text-box">
+                <!--Box 1-->
+                <div class="col-lg-4" style="background-color: #506681;">
+                    <div class="text-box hover-effect" style="height: 343.641px;">
+                        <a href="#"> <i class="fa fa-calendar"></i>
+                            <h3>Founded 2003</h3>
+                        </a>
+                    </div>
                 </div>
-                <!-- Testimonials -->
-                <div class="carousel arrows-visibile testimonial testimonial-single testimonial-left" data-items="1">
-
-                    <!-- Testimonials item -->
-                    <div class="testimonial-item">
-                        <img src="images/team/9.jpg" alt="">
-                        <p>Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!</p>
-                        <span>Alan Monre</span>
-                        <span>CEO, Square Software</span>
+                <!--End: Box 1-->
+                <!--Box 2-->
+                <div class="col-lg-4" style="background-color: #41566f;">
+                    <div class="text-box hover-effect" style="height: 343.641px;">
+                        <a href="#"> <i class="fa fa-clipboard-check"></i>
+                            <h3>171 Employees </h3>
+                        </a>
                     </div>
-                    <!-- end: Testimonials item-->
-
-                    <!-- Testimonials item -->
-                    <div class="testimonial-item">
-                        <img src="images/team/9.jpg" alt="">
-                        <p>Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!</p>
-                        <span>Alan Monre</span>
-                        <span>CEO, Square Software</span>
-                    </div>
-                    <!-- end: Testimonials item-->
-
-                    <!-- Testimonials item -->
-                    <div class="testimonial-item">
-                        <img src="images/team/9.jpg" alt="">
-                        <p>The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
-                        <span>Alan Monre</span>
-                        <span>CEO, Square Software</span>
-                    </div>
-                    <!-- end: Testimonials item-->
-
                 </div>
-                <!-- end: Testimonials -->
+                <!--End: Box 2-->
+                <!--Box 3-->
+                <div class="col-lg-4" style="background-color: #32475f;">
+                    <div class="text-box hover-effect" style="height: 343.641px;">
+                        <a href="#"> <i class="fa fa-chart-line"></i>
+                            <h3>23B Assets Under Management </h3>
+                        </a>
+                    </div>
+                </div>
+                <!--End: Box 3-->
             </div>
-        </section>
+        </div>
+
 
         <!-- Footer -->
         <footer id="footer">
